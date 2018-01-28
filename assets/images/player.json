@@ -1,0 +1,20 @@
+{
+    "image" : "assets/images/main_animated.png",
+    "width" : 142,
+    "height": 132,
+    "animation" : {
+        "idle" : {
+            "speed" : 6,
+            "looped" : "true",
+            "f" : [0, 1, 2, 2, 3, 4, 5, 5]
+        }
+    },
+    "body": {
+        "parts": [
+            {"type": "circle", "x": -1, "y": 5, "r": 25},
+            {"type": "circle", "x": 0, "y": -16, "r": 10},
+            {"type": "circle", "x": -25, "y": 20, "r": 10},
+            {"type": "circle", "x": 20, "y": 20, "r": 10}
+        ]
+    }
+}

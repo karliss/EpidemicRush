@@ -1,0 +1,19 @@
+{
+    "image" : "assets/images/antibody.png",
+    "width" : 100,
+    "height": 246,
+    "animation" : {
+        "idle" : {
+            "speed" : 6,
+            "looped" : "true",
+            "f" : [0, 1, 2, 3]
+        }
+    },
+    "body": {
+        "parts": [
+            {"type": "circle", "x": 0, "y": 20, "r": 25},
+            {"type": "circle", "x": 0, "y": -21, "r": 25},
+            {"type": "circle", "x": 0, "y": -5, "r": 37}
+        ]
+    }
+}

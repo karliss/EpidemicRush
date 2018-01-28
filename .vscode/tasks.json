@@ -1,0 +1,69 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "html5 release",
+			"command": "haxelib",
+			"args": ["run", "lime", "test", "html5"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"label": "html5 debug",
+			"command": "haxelib",
+			"args": ["run", "lime", "test", "html5", "-debug"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": "$haxe"
+		},
+		{
+			"label": "neko release",
+			"command": "haxelib",
+			"args": ["run", "lime", "test", "neko"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"label": "neko debug",
+			"command": "haxelib",
+			"args": ["run", "lime", "test", "neko", "-debug"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"label": "neko release -Dnext",
+			"command": "haxelib",
+			"args": ["run", "lime", "test", "neko", "-Dnext"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"label": "neko debug -Dnext",
+			"command": "haxelib",
+			"args": ["run", "lime", "test", "neko", "-debug", "-Dnext"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"label": "cpp release",
+			"command": "haxelib",
+			"args": ["run", "lime", "test", "cpp"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"label": "cpp debug",
+			"command": "haxelib",
+			"args": ["run", "lime", "test", "cpp", "-debug"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"label": "cpp release -Dnext",
+			"command": "haxelib",
+			"args": ["run", "lime", "test", "cpp", "-Dnext"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"label": "cpp debug -Dnext",
+			"command": "haxelib",
+			"args": ["run", "lime", "test", "cpp", "-Dnext", "-debug"],
+			"problemMatcher": "$haxe"
+		},
+	]
+}

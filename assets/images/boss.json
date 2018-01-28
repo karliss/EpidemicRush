@@ -1,0 +1,19 @@
+{
+    "image" : "assets/images/big_bad_guy_SPRITESHEET.png",
+    "width" : 400,
+    "height": 408,
+    "animation" : {
+        "idle" : {
+            "speed" : 8,
+            "looped" : "true",
+            "f" : [0, 1, 2, 3]
+        }
+    },
+    "body": {
+        "parts": [
+            {"type": "circle", "x": 15, "y": 13, "r": 140},
+            {"type": "circle", "x": 15, "y": -13, "r": 140},
+            {"type": "circle", "x": -110, "y": 10, "r": 35}
+        ]
+    }
+}

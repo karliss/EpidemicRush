@@ -1,0 +1,19 @@
+{
+	"haxe.displayConfigurations": [
+		["export/html5/haxe/debug.hxml"],
+		["export/html5/haxe/release.hxml"],
+		["export/linux64/cpp/haxe/debug.hxml"],
+		["export/linux64/cpp/haxe/release.hxml"],
+
+	],
+	"haxe.diagnosticsPathFilter": "${workspaceRoot}/source",
+	"search.exclude": {
+		"export/*": true,
+		"export/**": true
+	},
+	"codedox": {
+		"commentdescription": "\n",
+		"paramFormat": "@param   ${name} ",
+		"returnFormat": "@return  ${type}"
+	}
+}
