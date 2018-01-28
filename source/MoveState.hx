@@ -101,7 +101,7 @@ class MoveState {
             if (gamepad.pressed.LEFT_SHOULDER) {
                 dashPressed = true;
             }
-            if (gamepad.anyPressed([BACK, X]) ) {
+            if (gamepad.anyJustReleased([BACK, X]) ) {
                 backPressed = true;
             }
             if (gamepad.pressed.START) {
@@ -128,7 +128,7 @@ class MoveState {
             }
         }
 
-        if (FlxG.keys.anyJustPressed([ESCAPE])) {
+        if (FlxG.keys.anyJustReleased([ESCAPE])) {
             backPressed = true;
         }
         if (FlxG.keys.anyPressed([ENTER, SPACE])) {

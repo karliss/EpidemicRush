@@ -312,7 +312,7 @@ class PlayState extends FlxState
 	}
 
 	function grow(amount: Float) {
-		var range = amount * 10;
+		var range = amount * 50;
 		var ri:Int = cast range;
 		var rv:Float = Std.random(cast range);
 		var rv2:Float = Std.random(cast range);

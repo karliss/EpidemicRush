@@ -1,0 +1,26 @@
+--- FlxNapeSpaceOrig.hx	2018-01-25 22:47:26.230748000 +0200
++++ FlxNapeSpace.hx	2018-01-27 02:06:08.466613490 +0200
+@@ -25,6 +25,7 @@
+ class FlxNapeSpace extends FlxBasic
+ {
+ 	public static var space:Space;
++	public static var paused: Bool = false;
+ 	
+ 	/**
+ 	 * The number of iterations used by nape in resolving errors in the velocities of objects.
+@@ -166,7 +167,7 @@
+ 	
+ 	override public function update(elapsed:Float):Void
+ 	{
+-		if (space != null && elapsed > 0)
++		if (space != null && elapsed > 0 && paused == false)
+ 			space.step(elapsed, velocityIterations, positionIterations);
+ 	}
+ 	
+@@ -191,4 +192,4 @@
+ 		FlxG.camera.transformObject(sprite);
+ 		#end
+ 	}
+-}
+\ No newline at end of file
++}
